@@ -1,1 +1,17 @@
-"react": "17.0.0"
+{
+  "name": "renovate-playground",
+  "version": "1.0.0",
+  "description": "Dummy project to test Renovate PR generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "0.21.1",
+    "react": "17.0.2"
+  },
+  "devDependencies": {
+    "typescript": "4.5.4",
+    "eslint": "7.32.0"
+  }
+}
