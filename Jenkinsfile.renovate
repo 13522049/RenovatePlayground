@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    triggers { cron('*/5 * * * *') }
+    environment {
+        RENOVATE_TOKEN = credentials('renovate-token-id')
+        RENOVATE_PLATFORM = 'github'
+    }
+    stages {
+        stage('Run Renovate') {
+            steps { sh 'npx --yes renovate 13522049/RenovatePlayground' }
+        }
+    }
+}
