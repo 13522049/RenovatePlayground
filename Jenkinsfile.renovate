@@ -4,6 +4,7 @@ pipeline {
     environment {
         RENOVATE_TOKEN = credentials('renovate-token-id')
         RENOVATE_PLATFORM = 'github'
+        LOG_LEVEL = 'debug'
     }
     stages {
         stage('Run Renovate') {
